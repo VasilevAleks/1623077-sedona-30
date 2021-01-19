@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Санек Васильев](https://up.htmlacademy.ru/htmlcss/30/user/1623077).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
