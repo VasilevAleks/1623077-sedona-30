@@ -25,7 +25,8 @@
   --main-color: #ffffff;
   --search-hotels:#766357;
   --svg-blocks: #81B3D2;
-}
+  --feature-n3-n5: #EEEEEE;
+  }
 
 /* Global */
 body {
@@ -36,37 +37,66 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: var(--basic-white);
+  color: var(--title-text);
   text-transform: uppercase;
   background-color: var(--main-color);
   background-image: url("../img/background-photo.png");
   background-position: top center;
   background-repeat: no-repeat;
+  /*background-size: 1200px 509px;
+   background-attachment: fixed;
+  background: url("../img/welcome.png") 50% 50% no-repeat;*/
 }
 
 a {
   text-decoration: none;
 }
+
 /* Menu Navigation*/
 
+
 .main-header {
-  background-color: var(--main-color)
+  background-color: var(--main-color);
+  background-image: url("../img/background-photo.png") no-repeat top center,
+  url("../img/welcome.png") 411px 133px no-repeat;
 }
 
 .site-navigation {
-  text-decoration: none;
+  list-style: none;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
+.site-navigation a:any-link {
+  color: var(--title-text);
+}
+
+
+.site-navigation a:hover {
+  color: var(--svg-blocks);
+}
+
+.site-navigation a:focus {
+  color: var(--title-text);
+  opacity: 0.3;
+}
+
+.site-navigation a:active {
+  color: var(--search-hotels);
+}
+/* Для каталога не обращать внимание (затупил полсе буду использовать
 .site-navigation a:any-link {
   color: var(--title-text);
   font-size: 12px;
   line-height: 18px;
   border-bottom: 1px dashed var(--svg-blocks)
+  opacity:0.3;
 }
 
 
 .site-navigation a:hover {
-  color: var(--svg-blocks)
+  color: var(--svg-blocks);
   font-size: 12px;
   line-height: 18px;
   border-bottom: 1px dashed var(--svg-blocks)
@@ -78,9 +108,169 @@ a {
   line-height: 18px;
 }
 
-.site-navigation a:visited {
-  color: var(--svg-blocks)
+.site-navigation a:active {
+  color: var(--svg-blocks);
   font-size: 12px;
   line-height: 18px;
 }
+*/
+/*.welcome-logo {
+  background: url("../img/welcome.png") 50% 50% no-repeat;
+}*/
 
+.welcome-logo span {
+  visibility: hidden;
+}
+/* Discruption*/
+
+.discruption h2{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.discruption p {
+  line-height: 26px;
+  color: var(--text);
+}
+
+.features-list{
+  list-style: none;
+}
+/* Feature -1*/
+
+.features-N1 {
+  color: var(--rev-text);
+  background-image: url(../img/features/features-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-color: var(--svg-blocks);
+}
+
+.features-N1 h2{
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.why-features-N1{
+  background-color: var(--main-color);
+  color: var(--title-text)
+}
+.house {
+  background-image: url(../img/features/house.svg);
+  background-repeat: no-repeat;
+  /*background-size: 75px 72px;*/
+}
+
+.house dt {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.food {
+  background-image: url(../img/features/food.svg);
+  background-repeat: no-repeat;
+  /*background-size: 75px 70px;*/
+}
+
+.food dt {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.present {
+  background-image: url(../img/features/present.svg);
+  background-repeat: no-repeat;
+  /*background-size: 75px 70px;*/
+}
+
+.present dt {
+  font-size: 21px;
+  font-weight: 700;
+}
+/* Feature -2*/
+.features-N2 {
+  color: var(--rev-text);
+  background-image: url(../img/features/features-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-color: var(--svg-blocks);
+}
+
+.features-N2 h3{
+  font-size: 21px;
+  font-weight: 700;
+}
+ /*features from 3 to 5*/
+
+.features-N3-N5 {
+  background-color: var(--feature-n3-n5);
+}
+.features-N3 h4{
+  font-size: 21px;
+  font-weight: 700;
+}
+.features-N4 h5{
+  font-size: 21px;
+  font-weight: 700;
+}
+.features-N5 h6{
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.reservation {
+  line-height: 24px;
+}
+
+.reservation h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.reservation-form span{
+  background-color: var(--search-hotels);
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--rev-text)
+}
+
+.reservation-form p{
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--title-text)
+}
+
+.button-find {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: var(--svg-blocks);
+}
+
+/* Footer*/
+
+.main-footer{
+  font-size: 21px;
+  line-height: 26px;
+  list-style: none;
+  color: var(--title-text);
+}
+.footer-contacts{
+  font-weight: 700;
+}
+
+.footer-network h2 {
+  visibility: hidden;
+}
+
+.button-network {
+  background-color: var(--svg-blocks);
+}
+
+.footer-copyright {
+  font-size: 14px;
+}
+.footer-copyright h2 {
+  visibility: hidden;
+}

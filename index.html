@@ -19,54 +19,66 @@
       </figure>
       <nav>
         <ul class= "site-navigation">
-          <li><a>Информация</a></li>
+          <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и Видео</a></li>
           <li><a href="blank.html">Карта штата</a></li>
           <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
-    <main class="conteiner">
-      <h1> Welcome sedona</h1>
-      <section class="discruption">
+    <main class="container">
+      <h1 class= "welcome-logo">
+        <span>
+          Welcome sedona
+        </span>
+      </h1>
+       <section class="discruption">
        <h2>Седона- небольшой городок в аризоне,<br>заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <section class= "features">
-         <ul>
-            <li class="features_N1">
+         <ul class= "features-list">
+            <li class="features-N1">
               <h2>Настоящий городок</h2>
-              <span>№1</span>
+              <span>- №1 -</span>
               <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-              <dl>
-                <dt>ЖИЛЬЕ</dt>
-                <dd>Рекомендуем пожить в настоящем<br>мотеле, все как в кино!</dd>
-                <dt>ЕДА</dt>
-                <dd>Всегда заказывайте фирмерный бургер,<br>Вы не разочаруетесь!</dd>
-                <dt>Cувениры</dt>
-                <dd>Не только Китайского, но и местного<br>производства</dd>
+              <dl class="why-features-N1">
+                <div class="house">
+                  <dt>ЖИЛЬЕ</dt>
+                  <dd>Рекомендуем пожить в настоящем<br>мотеле, все как в кино!</dd>
+                </div>
+                <div class="food">
+                 <dt>ЕДА</dt>
+                 <dd>Всегда заказывайте фирмерный бургер,<br>Вы не разочаруетесь!</dd>
+                </div>
+                <div class="present">
+                  <dt>Cувениры</dt>
+                  <dd>Не только Китайского, но и местного<br>производства</dd>
+                </div>
               </dl>
             </li>
-            <li class="features_N2">
+            <li class="features-N2">
               <h3>Там есть<br>мост дьявола</h3>
-              <span>№2</span>
+              <span>- №2 -</span>
               <p>Да, по нему можно пройти!Если конечно<br>вы осмелитесь</p>
             </li>
-            <li class="features_N3">
-              <h4>Небольшая<br>площадь</h4>
-              <span>№3</span>
-              <p>Все достопримечательности<br>находятся очень близко</p>
-            </li>
-            <li class="features_N4">
-              <h5>Красивая<br>дорога</h5>
-              <span>№4</span>
-              <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
-            </li>
-            <li class="features_N5">
-              <h6>Мало<br>турисов</h6>
-              <span>№5</span>
-              <p>Большинство едет в гранд каньон<br>и толпится там</p>
-            </li>
+            <div class="features-N3-N5">
+              <li class="features-N3">
+                <h4>Небольшая<br>площадь</h4>
+                <span>- №3 -</span>
+                <p>Все достопримечательности<br>находятся очень близко</p>
+              </li>
+              <li class="features-N4">
+                <h5>Красивая<br>дорога</h5>
+                <span>- №4 -</span>
+                <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
+              </li>
+              <li class="features-N5">
+                <h6>Мало<br>турисов</h6>
+                <span>- №5 -</span>
+                <p>Большинство едет в гранд каньон<br>и толпится там</p>
+              </li>
+            </div>
          </ul>
       </section>
       <section class="reservation">
@@ -77,9 +89,11 @@
           Укажите предпологаемые даты поездки <br>
           И мы покажем вам лучшие предлоджения гостиниц в Седоне
         </p>
-        <p>
+      </section>
+      <section class="reservation-form">
+        <span>
           Поиск гостиницы в Седоне
-        </p>
+        </span>
         <form action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label for="reservation-entry">Дата заезда</label>
@@ -97,7 +111,7 @@
             <label for="reservation-child">Дети</label>
             <input id="reservation-child" type="number" name="number" placeholder="0">
           </p>
-          <button type="submit">Найти</button>
+          <button class="button-find" type="submit">Найти</button>
         </form>
       </section>
     </main>
@@ -105,24 +119,24 @@
       <div class= "footer-contacts">
         <p>#VISITSEDONA</p>
         <p>
-          Telefon: <a href="tel:+74956660166">+7 (495) 666-01-66</a>
+          Тел: <a href="tel:+74956660166">+7 (495) 666-01-66</a>
         </p>
       </div>
       <section class= "footer-network">
         <h2>Социальные сети</h2>
         <ul>
           <li>
-            <a class=button_network href="#">
+            <a class=button-network href="#">
               <img src="img/social_net/twitter.svg" width="17" height="15" alt="значек твиттера">
             </a>
           </li>
           <li>
-            <a class=button_network href="#">
+            <a class=button-network href="#">
              <img src="img/social_net/fb.svg" width="12" height="22" alt="значек фейсбука" >
             </a>
           </li>
           <li>
-            <a class=button_network href="#">
+            <a class=button-network href="#">
              <img src="img/social_net/youtube.svg" width="20" height="16" alt="значек Ютуба" >
             </a>
           </li>
