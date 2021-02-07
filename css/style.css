@@ -2,17 +2,85 @@
 
 @font-face {
  font-family: "PTSans";
- src: url("../fonts/PTSans-Bold.woff") format ("woff"), 
- url("../fonts/PTSans-Bold.woff2") format ("woff2");
+ src: url("../fonts/PTSans-Bold.woff2") format ("woff2"),
+ url("../fonts/PTSans-Bold.woff") format ("woff");
  font-weight: 700;
  font-style: normal;
 }
 
 @font-face {
-    font-family: "PTSans";
-    src: url("../fonts/PTSans.woff") format ("woff"), 
-    url("../fonts/PTSans.woff2") format ("woff2");
-    font-weight: 400;
-    font-style: normal;
-   }
-    
+  font-family: "PTSans";
+  src: url("../fonts/PTSans.woff2") format ("woff2"),
+  url("../fonts/PTSans.woff") format ("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*main colors*/
+
+:root {
+  --title-text: #000000;
+  --text: #333333;
+  --rev-text: #ffffff;
+  --main-color: #ffffff;
+  --search-hotels:#766357;
+  --svg-blocks: #81B3D2;
+}
+
+/* Global */
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background-color: var(--main-color);
+  background-image: url("../img/background-photo.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+/* Menu Navigation*/
+
+.main-header {
+  background-color: var(--main-color)
+}
+
+.site-navigation {
+  text-decoration: none;
+}
+
+.site-navigation a:any-link {
+  color: var(--title-text);
+  font-size: 12px;
+  line-height: 18px;
+  border-bottom: 1px dashed var(--svg-blocks)
+}
+
+
+.site-navigation a:hover {
+  color: var(--svg-blocks)
+  font-size: 12px;
+  line-height: 18px;
+  border-bottom: 1px dashed var(--svg-blocks)
+}
+
+.site-navigation a:focus {
+  color: var(--title-text);
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.site-navigation a:visited {
+  color: var(--svg-blocks)
+  font-size: 12px;
+  line-height: 18px;
+}
+
