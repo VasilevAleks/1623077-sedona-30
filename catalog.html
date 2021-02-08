@@ -3,14 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/icons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/icons/32.png">
+    <link rel="manifest" href="icons.webmanifest">
   </head>
   <body>
-    <header>
+    <header class="сatalog-header">
       <nav>
         <a href="index.html">
           <img src="img/logo.png" width="138" height="70" alt="Логотип Города Седона">
         </a>
-        <ul>
+        <ul class= "site-navigation">
           <li><a href="index.html">Информация</a></li>
           <li><a href="blank.html">Фото и Видео</a></li>
           <li><a href="blank.html">Карта штата</a></li>
@@ -18,11 +25,11 @@
         </ul>
       </nav>
     </header>
-    <main>
-     <section>
+    <main class="container">
+     <section class="seach-home">
        <h1>Фильтры по поиску жилья</h1>
        <form method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
+        <fieldset class="infrastructura">
           <legend>Инфраструктура</legend>
             <ul>
               <li>
@@ -34,12 +41,12 @@
                 <label for="filter-parking">Парковка</label>
               </li>
               <li>
-                <input type="checkbox="wifi" id="" namefilter-wifi">
+                <input type="checkbox" name="wifi" id="filter-wifi">
                 <label for="filter-wifi">WI-FI</label>
               </li>
             </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="type-of-house">
           <legend>Тип жилья</legend>
             <ul>
               <li>
@@ -56,7 +63,7 @@
               </li>
             </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="range-price">
           <legend>Cтоимость в сутки (P):</legend>
           <table>
             <tr>
@@ -69,15 +76,15 @@
             </tr>
            </table>
          </fieldset>
-         <button type="submit">Показать</button>
+         <button class ="show-filter-button" type="submit">Показать</button>
         </form>
-     </section> 
-     <section>
+     </section>
+     <section class="result-of-filter">
        <ul>
-         <li>
+         <li class= "how-many-find">
           <h2>Найдено: 3</h2>
          </li>
-         <li>
+         <li class="sorting">
            <h3>Сортировка:</h3>
            <p><a href="index.html">По цене</a></p>
            <p><a href="index.html">По типу</a></p>
@@ -85,95 +92,97 @@
          </li>
        </ul>
       </section>
-      <section>
+      <section class="results-of-hotels">
         <h2>Результаты поиска</h2>
         <ul>
           <li>
-            <article>
+            <article class="result-items">
              <a href="#">
               <h3>AMARA RESORT & SPA</h3>
              </a>
-             <div>
+             <div class= "type-of-hotels">
               <p>Гостиница</p>
               <p>От 4000 Р.</p>
-             </div>             
+             </div>
              <p>
                <img src="img/hotels/amara.jpg" width="135" height="90" Alt="AMARA_RESORT_&_SPA">
              </p>
-             <p>4 звезды</p>
-             <p>Рейтинг 8,5</p>
-             <button type="button">Подробнее</button>
-             <button type="button">Забронировать</button>
+             <p class="4stars">4 звезды</p>
+             <p class="rating">Рейтинг 8,5</p>
+             <button class="button-more" type="button">Подробнее</button>
+             <button class="button-reservation" type="button">Забронировать</button>
             </article>
           </li>
           <li>
-            <article>
+            <article class="result-items">
               <a href="#">
                 <h3>DESER QUAIL INN</h3>
               </a>
-              <div>
+              <div class= "type-of-hotels">
               <p>Мотель</p>
               <p>От 3000 Р.</p>
               </div>
               <p>
                 <img src="img/hotels/desert.jpg" width="135" height="90" Alt="DESER_QUAIL_INN">
               </p>
-              <p>3 звезды</p>
-              <p>Рейтинг 8,9</p>
-              <button type="button">Подробнее</button>
-              <button type="button">Забронировать</button>
+              <p class="3stars">3 звезды</p>
+              <p class="rating">Рейтинг 8,9</p>
+              <button class="button-more" type="button">Подробнее</button>
+              <button class="button-reservation" type="button">Забронировать</button>
             </article>
           </li>
           <li>
-            <article>
+            <article class="result-items">
               <a href="#">
                 <h3>VILLAS AT POCO DIABLO</h3>
               </a>
-              <div>
+              <div class= "type-of-hotels">
                 <p>Апартаменты</p>
                 <p>От 2000 Р.</p>
               </div>
               <p>
                 <img src="img/hotels/villas.jpg" width="135" height="90" Alt="VILLAS_AT_POCO_DIABLO">
               </p>
-              <p>2 звезды</p>
-              <p>Рейтинг 9,2</p>
-              <button type="button">Подробнее</button>
-              <button type="button">Забронировать</button>
-            </article>            
+              <p class="2stars">2 звезды</p>
+              <p class="rating">Рейтинг 9,2</p>
+              <button class="button-more" type="button">Подробнее</button>
+              <button class="button-reservation" type="button">Забронировать</button>
+            </article>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <p>#VISITSEDONA</p>
+    <footer class= "main-footer">
+      <div class= "footer-contacts">
+        <p>#VISITSEDONA</p>
         <p>
-          Telefon: <a href="tel:+74956660166">+7 (495) 666-01-66</a>
+          Тел: <a href="tel:+74956660166">+7 (495) 666-01-66</a>
         </p>
-      <section>
+      </div>
+      <section class= "footer-network">
         <h2>Социальные сети</h2>
         <ul>
           <li>
-            <a href="#">
+            <a class=button-network href="#">
               <img src="img/social_net/twitter.svg" width="17" height="15" alt="значек твиттера">
             </a>
           </li>
           <li>
-            <a href="#">
-             <img src="img/social_net/fb.svg" width="12" height="22" alt="значек фейсбука">
+            <a class=button-network href="#">
+             <img src="img/social_net/fb.svg" width="12" height="22" alt="значек фейсбука" >
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class=button-network href="#">
              <img src="img/social_net/youtube.svg" width="20" height="16" alt="значек Ютуба" >
             </a>
           </li>
         </ul>
       </section>
-      <section>
+      <section class= "footer-copyright">
         <h2>Разработчик</h2>
         <p> WEBSITE BY:
-          <a href="https://htmlacademy.ru/intensive/htmlcss ">HTML Academy
+          <a class=button_copyright href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy
             <img src="img/logo-htmlacademy.png" width="115" height="41" alt="значек HTML Academy"> >
           </a>
         </p>
