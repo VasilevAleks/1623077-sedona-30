@@ -48,11 +48,11 @@ body {
   color: var(--title-text);
   text-transform: uppercase;
 }
+
 .main-header {
   background-color: var(--main-color);
-  background-image: url("../img/background-photo.png");
-  background-position: top center;
-  background-repeat: no-repeat;
+  background: url("../img/welcome.png")  no-repeat top center,
+  url("../img/background-photo.png")  no-repeat top center;
   /*background-size: 1200px 509px;
    background-attachment: fixed;
   background: url("../img/welcome.png") 50% 50% no-repeat;*/
@@ -80,6 +80,18 @@ a {
   padding: 0;
   margin: 0;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
 /* Menu Navigation*/
 
 .main-header {
@@ -91,6 +103,7 @@ a {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
+  background-color: var(--main-color);
 }
 
 .site-navigation a:any-link {
@@ -114,9 +127,7 @@ a {
   background: url("../img/welcome.png") 50% 50% no-repeat;
 }
 
-.welcome-logo span {
-  visibility: hidden;
-}
+
 /* Discruption*/
 
 .discruption h2 {
@@ -331,10 +342,6 @@ a {
   font-weight: 700;
 }
 
-.footer-network h2 {
-  visibility: hidden;
-}
-
 .button-network {
   background-color: var(--svg-blocks);
 }
@@ -342,6 +349,4 @@ a {
 .footer-copyright {
   font-size: 14px;
 }
-.footer-copyright h2 {
-  visibility: hidden;
-}
+
