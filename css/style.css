@@ -50,8 +50,7 @@ body {
 }
 
 .main-header {
-  background-color: var(--main-color);
-  background: url("../img/welcome.png")  no-repeat top center,
+  background: var(--main-color) url("../img/welcome.png")  no-repeat top center,
   url("../img/background-photo.png")  no-repeat top center;
   /*background-size: 1200px 509px;
    background-attachment: fixed;
