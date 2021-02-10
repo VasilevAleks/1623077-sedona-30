@@ -93,11 +93,6 @@ a {
 
 /* Menu Navigation*/
 
-.main-header {
-  background-color: var(--main-color);
-  background-image: url("../img/background-photo.png") no-repeat top center;
-}
-
 .site-navigation {
   font-size: 14px;
   line-height: 26px;
