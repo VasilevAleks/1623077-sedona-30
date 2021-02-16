@@ -13,28 +13,33 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <figure class="logo">
-        <img src= "img/logo-1.png" alt="Логотип Сидоны">
-      </figure>
-      <nav>
-        <ul class= "site-navigation">
-          <li><a href="blank.html">Информация</a></li>
-          <li><a href="blank.html">Фото и Видео</a></li>
-          <li><a href="blank.html">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <figure class= "logo">
+          <img src="img/logo-1.png" alt="Логотип Сидоны">
+        </figure>
+        <nav>
+          <ul class="site-navigation">
+            <li><a href="blank.html">Информация</a></li>
+            <li><a href="blank.html">Фото и Видео</a></li>
+            <li><a href="blank.html">Карта штата</a></li>
+            <li><a href="catalog.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+        <div class="welcome-logo">
+          <img src="img/welcome.png" alt= "Добро пожаловать в Седону">
+        </div>
+      </div>
     </header>
-    <main class="container">
-      <h1 class= "visually-hidden"></h1>
+    <main class= "container">
+      <h1 class="visually-hidden">
         Welcome sedona
       </h1>
       <section class="discruption">
        <h2>Седона- небольшой городок в аризоне,<br>заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
-      <section class= "features">
-         <ul class= "features-list">
+      <section class="features">
+         <ul class="features-list">
             <li class="features-item">
               <h2>Настоящий городок</h2>
               <span>- №1 -</span>
@@ -113,40 +118,42 @@
       </section>
     </main>
     <footer class= "main-footer">
-      <div class= "footer-contacts">
-        <p>#VISITSEDONA</p>
-        <p>
-          Тел: <a href="tel:+74956660166">+7 (495) 666-01-66</a>
-        </p>
+      <div class= "container">
+        <div class= "footer-contacts">
+          <p>#VISITSEDONA</p>
+          <p>
+            Тел: <a href="tel:+74956660166">+7 (495) 666-01-66</a>
+          </p>
+        </div>
+        <section class= "footer-network">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul>
+            <li>
+              <a class=button-network href="#">
+                <img src="img/social_net/twitter.svg" width="17" height="15" alt="значек твиттера">
+              </a>
+            </li>
+            <li>
+              <a class=button-network href="#">
+               <img src="img/social_net/fb.svg" width="12" height="22" alt="значек фейсбука" >
+              </a>
+            </li>
+            <li>
+              <a class=button-network href="#">
+               <img src="img/social_net/youtube.svg" width="20" height="16" alt="значек Ютуба" >
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class= "footer-copyright">
+          <h2 class="visually-hidden">Разработчик</h2>
+          <p> WEBSITE BY:
+            <a class=button_copyright href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy
+              <img src="img/logo-htmlacademy.png" width="115" height="41" alt="значек HTML Academy">
+            </a>
+          </p>
+        </section>
       </div>
-      <section class= "footer-network">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul>
-          <li>
-            <a class=button-network href="#">
-              <img src="img/social_net/twitter.svg" width="17" height="15" alt="значек твиттера">
-            </a>
-          </li>
-          <li>
-            <a class=button-network href="#">
-             <img src="img/social_net/fb.svg" width="12" height="22" alt="значек фейсбука" >
-            </a>
-          </li>
-          <li>
-            <a class=button-network href="#">
-             <img src="img/social_net/youtube.svg" width="20" height="16" alt="значек Ютуба" >
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class= "footer-copyright">
-        <h2 class="visually-hidden">Разработчик</h2>
-        <p> WEBSITE BY:
-          <a class=button_copyright href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy
-            <img src="img/logo-htmlacademy.png" width="115" height="41" alt="значек HTML Academy">
-          </a>
-        </p>
-      </section>
     </footer>
   </body>
 </html>
