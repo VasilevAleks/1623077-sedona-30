@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -11,21 +11,23 @@
     <link rel="apple-touch-icon" href="img/icons/32.png">
     <link rel="manifest" href="icons.webmanifest">
   </head>
-  <body>
+  <body class="page-body">
     <header class="сatalog-header">
-      <nav>
-        <a href="index.html">
-          <img src="img/logo.png" width="138" height="70" alt="Логотип Города Седона">
-        </a>
-        <ul class= "site-navigation">
-          <li><a href="index.html">Информация</a></li>
-          <li><a href="blank.html">Фото и Видео</a></li>
-          <li><a href="blank.html">Карта штата</a></li>
-          <li>Гостиницы</li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav>
+          <a href="index.html">
+            <img src="img/logo.png" width="138" height="70" alt="Логотип Города Седона">
+          </a>
+          <ul class= "site-navigation">
+            <li><a href="index.html">Информация</a></li>
+            <li><a href="blank.html">Фото и Видео</a></li>
+            <li><a href="blank.html">Карта штата</a></li>
+            <li>Гостиницы</li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main class="container">
+    <main class="catalog-page container">
      <section class="search-home">
        <h1 class="visually-hidden">Фильтры по поиску жилья</h1>
        <form method="get" action="https://echo.htmlacademy.ru">
@@ -80,7 +82,7 @@
         </form>
      </section>
      <section class="result-of-filter">
-       <ul>
+       <ul class="results-of-filter">
          <li class= "how-many-find">
           <h2>Найдено: 3</h2>
          </li>
@@ -91,10 +93,10 @@
            <p><a href="index.html">По рейтингу</a></p>
          </li>
        </ul>
-      </section>
-      <section class="results-of-hotels">
+     </section>
+     <section class="results-of-hotels">
         <h2 class="visually-hidden">Результаты поиска</h2>
-        <ul>
+        <ul class="result-list">
           <li>
             <article class="result-items">
              <a href="#">
@@ -107,10 +109,12 @@
              <p>
                <img src="img/hotels/amara.jpg" width="135" height="90" Alt="AMARA_RESORT_&_SPA">
              </p>
-             <p class="4stars">4 звезды</p>
+             <p class="stars4">4 звезды</p>
              <p class="rating">Рейтинг 8,5</p>
-             <button class="button-more" type="button">Подробнее</button>
-             <button class="button-reservation" type="button">Забронировать</button>
+             <div class="buttons-for-hotels">
+              <button class="button-more" type="button">Подробнее</button>
+              <button class="button-reservation" type="button">Забронировать</button>
+             </div>
             </article>
           </li>
           <li>
@@ -125,10 +129,12 @@
               <p>
                 <img src="img/hotels/desert.jpg" width="135" height="90" Alt="DESER_QUAIL_INN">
               </p>
-              <p class="3stars">3 звезды</p>
+              <p class="stars3">3 звезды</p>
               <p class="rating">Рейтинг 8,9</p>
-              <button class="button-more" type="button">Подробнее</button>
-              <button class="button-reservation" type="button">Забронировать</button>
+              <div class="buttons-for-hotels">
+                <button class="button-more" type="button">Подробнее</button>
+                <button class="button-reservation" type="button">Забронировать</button>
+              </div>
             </article>
           </li>
           <li>
@@ -140,53 +146,57 @@
                 <p>Апартаменты</p>
                 <p>От 2000 Р.</p>
               </div>
-              <p>
+              <p class= "foto-hotel">
                 <img src="img/hotels/villas.jpg" width="135" height="90" Alt="VILLAS_AT_POCO_DIABLO">
               </p>
-              <p class="2stars">2 звезды</p>
+              <p class="stars2">2 звезды</p>
               <p class="rating">Рейтинг 9,2</p>
-              <button class="button-more" type="button">Подробнее</button>
-              <button class="button-reservation" type="button">Забронировать</button>
+              <div class="buttons-for-hotels">
+                <button class="button-more" type="button">Подробнее</button>
+                <button class="button-reservation" type="button">Забронировать</button>
+              </div>
             </article>
           </li>
         </ul>
-      </section>
+     </section>
     </main>
     <footer class= "main-footer">
-      <div class= "footer-contacts">
-        <p>#VISITSEDONA</p>
-        <p>
-          Тел: <a href="tel:+74956660166">+7 (495) 666-01-66</a>
-        </p>
+      <div class= "container">
+        <div class= "footer-contacts">
+          <p>#VISITSEDONA</p>
+          <p>
+            Тел: <a href="tel:+74956660166">+7 (495) 666-01-66</a>
+          </p>
+        </div>
+        <section class= "footer-network">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul>
+            <li>
+              <a class=button-network href="#">
+                <img src="img/social_net/twitter.svg" width="17" height="15" alt="значек твиттера">
+              </a>
+            </li>
+            <li>
+              <a class=button-network href="#">
+               <img src="img/social_net/fb.svg" width="12" height="22" alt="значек фейсбука" >
+              </a>
+            </li>
+            <li>
+              <a class=button-network href="#">
+               <img src="img/social_net/youtube.svg" width="20" height="16" alt="значек Ютуба" >
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class= "footer-copyright">
+          <h2 class="visually-hidden">Разработчик</h2>
+          <p> WEBSITE BY:
+            <a class=button_copyright href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy
+              <img src="img/logo-htmlacademy.png" width="115" height="41" alt="значек HTML Academy">
+            </a>
+          </p>
+        </section>
       </div>
-      <section class= "footer-network">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul>
-          <li>
-            <a class=button-network href="#">
-              <img src="img/social_net/twitter.svg" width="17" height="15" alt="значек твиттера">
-            </a>
-          </li>
-          <li>
-            <a class=button-network href="#">
-             <img src="img/social_net/fb.svg" width="12" height="22" alt="значек фейсбука" >
-            </a>
-          </li>
-          <li>
-            <a class=button-network href="#">
-             <img src="img/social_net/youtube.svg" width="20" height="16" alt="значек Ютуба" >
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class= "footer-copyright">
-        <h2 class="visually-hidden">Разработчик</h2>
-        <p> WEBSITE BY:
-          <a class=button_copyright href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy
-            <img src="img/logo-htmlacademy.png" width="115" height="41" alt="значек HTML Academy">
-          </a>
-        </p>
-      </section>
     </footer>
   </body>
 </html>
