@@ -80,9 +80,8 @@ img {
 .main-footer,
 .features-list,
 .site-navigation,
-.infrastructura ul,
+.infrastructure ul,
 .type-of-house ul,
-.range-price table,
 .button-reservation,
 .button-more {
   list-style: none;
@@ -113,7 +112,26 @@ img {
   line-height: 26px;
   font-weight: 700;
   background-color: var(--main-color);
-  display: flex;
+  height: 56px;
+  display:grid;
+  grid-template-columns: 200px 200px  1fr 200px 200px;
+}
+
+.site-navigation li:first-child {
+  grid-column: 1/2;
+}
+
+.site-navigation li:nth-child(2){
+  grid-column: 2/3;
+}
+.site-navigation li:nth-child(3){
+  grid-column: 4/5;
+}
+.site-navigation li:nth-child(4){
+  grid-column: 5/6;
+}
+.logo {
+  grid-column: 3/4;
 }
 
 .site-navigation a:any-link {
@@ -178,7 +196,7 @@ img {
   background-repeat: no-repeat;
   background-position: top right;
   background-color: var(--svg-blocks);
-  text-align: right center;
+  text-align: justify;
   grid-column: 1/-1;
   grid-row: 1/2;
 }
