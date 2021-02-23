@@ -30,7 +30,7 @@
     <main class="catalog-page container">
      <section class="search-home">
        <h1 class="visually-hidden">Фильтры по поиску жилья</h1>
-       <form method="get" action="https://echo.htmlacademy.ru">
+       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="infrastructure">
           <legend>Инфраструктура</legend>
             <ul>
@@ -76,10 +76,10 @@
              <td>от 0</td>
              <td>до 3000</td>
             </tr>
-           </table>
-         </fieldset>
-         <button class ="show-filter-button" type="submit">Показать</button>
-        </form>
+          </table>
+          <button class ="show-filter-button" type="submit">Показать</button>
+        </fieldset>
+      </form>
      </section>
      <section class="result-of-filter">
        <ul class="results-of-filter">
@@ -99,61 +99,71 @@
         <ul class="result-list">
           <li>
             <article class="result-items">
-             <a href="#">
-              <h3>AMARA RESORT & SPA</h3>
-             </a>
-             <div class= "type-of-hotels">
-              <p>Гостиница</p>
-              <p>От 4000 Р.</p>
-             </div>
-             <p>
+             <div class= "type-of-hotels"></div>
+               <a href="#">
+                 <h3>AMARA RESORT & SPA</h3>
+                </a>
+                <span>
+                  <p>Гостиница</p>
+                  <p>От 4000 Р.</p>
+                </span>
+                <div class="buttons-for-hotels">
+                  <button class="button-more" type="button">Подробнее</button>
+                  <button class="button-reservation" type="button">Забронировать</button>
+                </div>
+              </div>
+             <figure class="foto-hotel">
                <img src="img/hotels/amara.jpg" width="135" height="90" Alt="AMARA_RESORT_&_SPA">
-             </p>
-             <p class="stars4">4 звезды</p>
-             <p class="rating">Рейтинг 8,5</p>
-             <div class="buttons-for-hotels">
-              <button class="button-more" type="button">Подробнее</button>
-              <button class="button-reservation" type="button">Забронировать</button>
+             </figure>
+             <div class="hotel-status">
+              <p class="stars4">4 звезды</p>
+              <p class="rating">Рейтинг 8,5</p>
              </div>
             </article>
           </li>
           <li>
             <article class="result-items">
-              <a href="#">
-                <h3>DESER QUAIL INN</h3>
-              </a>
-              <div class= "type-of-hotels">
-              <p>Мотель</p>
-              <p>От 3000 Р.</p>
+              <div class= "type-of-hotels"></div>
+                <a href="#">
+                 <h3>DESER QUAIL INN</h3>
+                </a>
+                <p>Мотель</p>
+                <p>От 3000 Р.</p>
+                <div class="buttons-for-hotels">
+                  <button class="button-more" type="button">Подробнее</button>
+                  <button class="button-reservation" type="button">Забронировать</button>
+                </div>
               </div>
-              <p>
+              <figure class="foto-hotel">
                 <img src="img/hotels/desert.jpg" width="135" height="90" Alt="DESER_QUAIL_INN">
-              </p>
-              <p class="stars3">3 звезды</p>
-              <p class="rating">Рейтинг 8,9</p>
-              <div class="buttons-for-hotels">
-                <button class="button-more" type="button">Подробнее</button>
-                <button class="button-reservation" type="button">Забронировать</button>
+              </figure>
+              <div class="hotel-status">
+                <p class="stars3">3 звезды</p>
+                <p class="rating">Рейтинг 8,9</p>
               </div>
             </article>
           </li>
           <li>
             <article class="result-items">
-              <a href="#">
-                <h3>VILLAS AT POCO DIABLO</h3>
-              </a>
-              <div class= "type-of-hotels">
-                <p>Апартаменты</p>
-                <p>От 2000 Р.</p>
+              <div class= "type-of-hotels"></div>
+                <a href="#">
+                 <h3>VILLAS AT POCO DIABLO</h3>
+                </a>
+                <span>
+                 <p>Апартаменты</p>
+                 <p>От 2000 Р.</p>
+                </span>
+                <div class="buttons-for-hotels">
+                  <button class="button-more" type="button">Подробнее</button>
+                  <button class="button-reservation" type="button">Забронировать</button>
+                </div>
               </div>
-              <p class= "foto-hotel">
-                <img src="img/hotels/villas.jpg" width="135" height="90" Alt="VILLAS_AT_POCO_DIABLO">
-              </p>
-              <p class="stars2">2 звезды</p>
-              <p class="rating">Рейтинг 9,2</p>
+              <figure class= "foto-hotel">
+               <img src="img/hotels/villas.jpg" width="135" height="90" Alt="VILLAS_AT_POCO_DIABLO">
+              </figure>
               <div class="buttons-for-hotels">
-                <button class="button-more" type="button">Подробнее</button>
-                <button class="button-reservation" type="button">Забронировать</button>
+               <p class="stars2">2 звезды</p>
+               <p class="rating">Рейтинг 9,2</p>
               </div>
             </article>
           </li>
