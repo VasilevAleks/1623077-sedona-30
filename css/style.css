@@ -64,7 +64,7 @@
 .search-home {
   background-image: url("../img/catalog-background.png");
   background-position: top center;
-  background-repeat: repeat;/*исправить потом*/
+  background-repeat: no-repeat;
   background-size: 1200px 217px;
 }
 
@@ -184,6 +184,11 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 255px 330px 255px 255px;
 }
+.other-features h2{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
 .features-item h2,
 .other-features h2 {
@@ -299,6 +304,15 @@ img {
   background-color: var(--feature-n3-n5);
   margin: 0;
   padding-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 25px;
+  height: 255px;
+}
+.other-features span {
+  padding-top: 25px;
+  padding-bottom: 23px;
 }
 
 .features-item:nth-child(4){
@@ -318,20 +332,7 @@ img {
   text-align: center;
 }
 
-.features-item .other-features {
-  margin: auto;
-  padding: 0;
-  list-style: none;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
-  height: 255px;
 
-}
-.features-item {
-  list-style: none;
-  outline: 5px solid rgba(89, 0, 255, 0.7);
-  outline-offset: -5px;
-}
 /*reservation*/
 
 .reservation {
@@ -412,8 +413,6 @@ img {
   display: flex;
   gap: 10px;
   align-self: center;
-  outline-offset: -5px;
-  outline: 5px solid rgba(255, 0, 255, 0.7);
   padding: 0;
   margin: 0;
   list-style: none;
@@ -423,8 +422,6 @@ img {
   margin-right: 32px;
   justify-content: space-around;
   align-items: center;
-  outline-offset: -5px;
-  outline: 5px solid rgba(0, 255, 21, 0.7);
   width:393px;
   margin-left:10px;
   font-size: 12px;
@@ -459,6 +456,11 @@ img {
   grid-row: 3/4;
 
 }
+.results-of-hotels li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
 .result-items {
   display: flex;
@@ -472,6 +474,7 @@ img {
   height: 150px;
 }
 .foto-hotel {
+  margin: auto;
   order:-1;
   width:135px;
   height: 90px;
@@ -480,54 +483,42 @@ img {
   display: flex;
   flex-direction: column; /* не могу понять почему не переводится в столбцы*/
   justify-content: space-between;
-
+  align-content: flex-start;
+  width:792px;
+  height: 150px;
 }
 
-/*.result-items {
-  display: grid;
-  grid-template-columns: 135px 1fr 125px;
-  grid-template-rows: 40px 50px 50px;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+.type-of-hotels h3,
+.features-of-hotels p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.type-of-hotels h3 {
+  padding-top:24px;
 }
 
-.result-items a {
-  grid-column: 2/3;
-  grid-row: 1/2;
-
-}
-.result-items .type-of-hotels {
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-
-.result-items .foto-hotel {
-  grid-column: 1/2;
-  grid-row: 1/4;
+.hotel-status {
+  display: flex;
+  flex-direction: column; /* не могу понять почему не переводится в столбцы*/
+  justify-content: space-between;
+  align-content: flex-end;
+  margin-top: 30px;
+  margin-right: 73px;
+  margin-bottom: 30px;
 }
 
-.result-items .stars4,
-.result-items .stars3,
-.result-items .stars2 {
-  grid-column: 3/4;
-  grid-row: 1/2;
+.features-of-hotels {
+  display: flex;
+  margin-right: 37px;
 }
-
-.result-items .rating {
-  grid-column: 3/4;
-  grid-row: 3/4;
+.features-of-hotels p {
+  margin-right: 37px;
 }
-.result-items .buttons-for-hotels {
-  grid-column: 2/3;
-  grid-row: 3/4;
-*/
 
 .buttons-for-hotels {
   display: flex;
   margin-bottom: 30px;
-}
-.type-of-hotels {
-  display: flex;
 }
 
 .result-items {
