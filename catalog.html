@@ -67,17 +67,24 @@
         </fieldset>
         <fieldset class="range-price">
           <legend>Cтоимость в сутки (P):</legend>
-          <table>
-            <tr>
-             <td>от 0</td>
-             <td>до 3000</td>
-            </tr>
-            <tr>
-             <td>от 0</td>
-             <td>до 3000</td>
-            </tr>
-          </table>
-          <button class ="show-filter-button" type="submit">Показать</button>
+          <div class="range-filter">
+            <div class="price-controls">
+              <label class="min-price">
+                 <input type="text" name="min-price" value="ОТ 0">
+              </label>
+              <label class="max-price">
+                 <input type="text" name="max-price" value="ДО 3000">
+              </label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0"></div>
+              <div class="toggle toggle-max" tabindex="0"></div>
+            </div>
+          </div>
+          <button class="button-show" type="button">Показать</button>
         </fieldset>
       </form>
      </section>
