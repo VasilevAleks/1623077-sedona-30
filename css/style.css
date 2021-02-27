@@ -60,14 +60,18 @@
 }
 
 .main-header {
-  background: var(--main-color) url("../img/background-photo.png") no-repeat center;
- }
+
+  background-color: var(--main-color);
+  background: url("../img/Shape.svg") 50% 508px no-repeat, url("../img/background-photo.png") 50% 55px no-repeat;
+  height: 582px;
+
+}
 .search-home {
   background-image: url("../img/catalog-background.png");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 1200px 217px;
-}
+  }
 
 a {
   text-decoration: none;
@@ -110,6 +114,8 @@ img {
 .navigation {
   display: flex;
   flex-direction: column;
+
+
 }
 
 .site-navigation {
@@ -120,23 +126,39 @@ img {
   height: 56px;
   display:grid;
   grid-template-columns: 200px 200px  1fr 200px 200px;
+
 }
 
 .site-navigation li:first-child {
   grid-column: 1/2;
+  text-align: left;
+  padding-top:15px;
+  padding-left: 73px;
 }
 
 .site-navigation li:nth-child(2){
   grid-column: 2/3;
+  text-align: left;
+  padding-top:15px;
+  padding-left: 100px;
 }
 .site-navigation li:nth-child(3){
   grid-column: 4/5;
+  text-align: right;
+  padding-top:15px;
+  padding-right: 99px;
 }
 .site-navigation li:nth-child(4){
   grid-column: 5/6;
+  text-align: right;
+  padding-top:15px;
+  padding-right: 72px;
 }
 .logo {
  order: 2;
+ position:relative;
+ top: -427px;
+ text-align: center;
 }
 
 .site-navigation a:any-link {
@@ -156,9 +178,10 @@ img {
   color: var(--search-hotels);
 }
 
-.welcome-logo,
-.logo {
-  text-align: center;
+.welcome-logo {
+  position:relative;
+  left:372px;
+  bottom: -75px;
 }
 
 
@@ -169,17 +192,23 @@ img {
   flex-direction: column;
   height: 215px;
   text-align: center;
+  margin-top: 8px;
+  margin-left: 5px;
+  margin-bottom: -22px;
 }
 
 .description h2 {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  padding-left: 0px;
 }
 
 .description p {
   line-height: 26px;
   color: var(--text);
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
 
 
