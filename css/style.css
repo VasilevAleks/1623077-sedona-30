@@ -107,15 +107,13 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 0px;
 }
 
 /* Menu Navigation*/
 .navigation {
   display: flex;
   flex-direction: column;
-
-
 }
 
 .site-navigation {
@@ -193,7 +191,7 @@ img {
   height: 215px;
   text-align: center;
   margin-top: 8px;
-  margin-left: 5px;
+
   margin-bottom: -22px;
 }
 
@@ -201,7 +199,8 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  padding-left: 0px;
+  margin-left: 365px;
+  width: 470px;
 }
 
 .description p {
@@ -259,6 +258,19 @@ img {
   padding: 0;
   list-style: none;
 }
+.live {
+  margin-top: 47px;
+  margin-bottom:54px;
+  padding-top: 0px;
+  list-style: none;
+}
+.bridge{
+  margin-top: 47px;
+  margin-bottom:54px;
+  padding-top: 0px;
+  list-style: none;
+}
+
 
 .house {
   display:flex;
@@ -268,8 +280,8 @@ img {
   width:400px;
   height: 330px;
   text-align: center;
-  background-image: url(../img/features/house.svg);
-  background-repeat: no-repeat;/*background-size: 75px 72px;*/
+  background: url(../img/features/house.svg) 50% 60px no-repeat;
+
 }
 
 .food {
@@ -280,9 +292,7 @@ img {
   width:400px;
   height: 330px;
   text-align: center;
-  background-image: url(../img/features/food.svg);
-  background-repeat: no-repeat;/*background-size: 75px 70px;*/
-
+  background: url(../img/features/food.svg) 50% 60px no-repeat;
 }
 
 .present {
@@ -293,11 +303,7 @@ img {
   width:400px;
   height: 330px;
   text-align: center;
-  background-image: url(../img/features/present.svg);
-  background-repeat: no-repeat;
-
-
-  /*background-size: 75px 70px;*/
+  background: url(../img/features/present.svg) 50% 55px no-repeat;
 }
 
 .features-item:nth-child(3)  {
@@ -319,7 +325,7 @@ img {
 .about {
   display: flex;
   flex-direction: column;
- justify-content: center;
+  justify-content: space-between;
  align-items: center;
  text-align: center;
   width: 400px;
@@ -335,13 +341,17 @@ img {
 .other-features {
   background-color: var(--feature-n3-n5);
   margin: 0;
-  padding-left: 70px;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 25px;
   height: 255px;
 }
+.other-features p {
+ position: relative;
+ top: -15px;
+}
+
 .other-features span {
   padding-top: 25px;
   padding-bottom: 23px;
