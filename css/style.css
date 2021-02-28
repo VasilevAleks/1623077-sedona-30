@@ -62,9 +62,8 @@
 .main-header {
 
   background-color: var(--main-color);
-  background: url("../img/Shape.svg") 50% 508px no-repeat, url("../img/background-photo.png") 50% 55px no-repeat;
+ background: url("../img/Shape.svg") 50% 508px no-repeat, url("../img/background-photo.png") 50% 55px no-repeat;
   height: 582px;
-
 }
 .search-home {
   background-image: url("../img/catalog-background.png");
@@ -107,14 +106,10 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 0px;
+  padding: 0px 0px;
 }
 
 /* Menu Navigation*/
-.navigation {
-  display: flex;
-  flex-direction: column;
-}
 
 .site-navigation {
   font-size: 14px;
@@ -124,9 +119,18 @@ img {
   height: 56px;
   display:grid;
   grid-template-columns: 200px 200px  1fr 200px 200px;
-
+  position: relative;
+  top: -100px;
+  z-index: 1;
 }
-
+.logo {
+  position: relative;
+  z-index: 2;
+  top: -14px;
+  left: 490px;
+  width: 138px;
+  height: 70px;
+ }
 .site-navigation li:first-child {
   grid-column: 1/2;
   text-align: left;
@@ -152,12 +156,6 @@ img {
   padding-top:15px;
   padding-right: 72px;
 }
-.logo {
- order: 2;
- position:relative;
- top: -427px;
- text-align: center;
-}
 
 .site-navigation a:any-link {
   color: var(--title-text);
@@ -178,8 +176,10 @@ img {
 
 .welcome-logo {
   position:relative;
+  width:457px;
+  height: 351px;
   left:372px;
-  bottom: -75px;
+  top: -20px;
 }
 
 
@@ -258,59 +258,68 @@ img {
   padding: 0;
   list-style: none;
 }
-.live {
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 400px;
   margin-top: 47px;
   margin-bottom:54px;
-  padding-top: 0px;
-  list-style: none;
 }
-.bridge{
-  margin-top: 47px;
-  margin-bottom:54px;
-  padding-top: 0px;
-  list-style: none;
+
+.live h2,
+.live span,
+.live p {
+ margin:-3px;
+}
+.bridge h2,
+.bridge span,
+.bridge p {
+ margin:-2px;
+}
+
+.why-features {
+  width:1200px;
+  height: 330px;
+  background: url(../img/features/house.svg) 162px 60px no-repeat, url(../img/features/food.svg) 562px 60px no-repeat, url(../img/features/present.svg) 968px 55px no-repeat;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 
 .house {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: flex-end;
-  width:400px;
-  height: 330px;
+  grid-column: 1/2;
+  margin-top: 80px;
+  margin-bottom: 10px;
   text-align: center;
-  background: url(../img/features/house.svg) 50% 60px no-repeat;
 
 }
 
 .food {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: flex-end;
-  width:400px;
-  height: 330px;
+  grid-column: 2/3;
+  margin-top: 80px;
+  margin-bottom: 10px;
   text-align: center;
-  background: url(../img/features/food.svg) 50% 60px no-repeat;
+
+
 }
 
 .present {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: flex-end;
-  width:400px;
-  height: 330px;
+   grid-column: 3/4;
+  margin-top: 80px;
+  margin-bottom: 10px;
   text-align: center;
-  background: url(../img/features/present.svg) 50% 55px no-repeat;
+}
+.house p,
+.food p,
+.present p {
+padding-top: 10px;
 }
 
 .features-item:nth-child(3)  {
   color: var(--rev-text);
-  /*background-image: url(../img/features/features-2.jpg);
-  background-repeat: no-repeat;
-  background-position: top left;*/
   background-color: var(--svg-blocks);
   text-align: right;
   grid-column: 1/-1;
@@ -322,14 +331,7 @@ img {
   padding: 0;
   list-style: none;
 }
-.about {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
- align-items: center;
- text-align: center;
-  width: 400px;
-}
+
 .features-item:nth-child(3) .container{
  flex-direction: row-reverse;
 }
