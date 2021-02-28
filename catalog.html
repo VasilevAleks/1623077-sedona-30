@@ -14,17 +14,19 @@
   <body class="page-body">
     <header class="сatalog-header">
       <div class="container">
-        <figure class= "logo">
-          <img src="img/logo-1.png" alt="Логотип Сидоны">
-        </figure>
-        <nav>
-          <ul class= "site-navigation">
-            <li><a href="index.html">Информация</a></li>
-            <li><a href="blank.html">Фото и Видео</a></li>
-            <li><a href="blank.html">Карта штата</a></li>
-            <li>Гостиницы</li>
-          </ul>
-        </nav>
+        <div class= "navigation">
+          <figure class= "logo">
+            <img src="img/logo-1.png" alt="Логотип Сидоны">
+          </figure>
+          <nav>
+            <ul class= "site-navigation">
+              <li><a href="index.html">Информация</a></li>
+              <li><a href="blank.html">Фото и Видео</a></li>
+              <li><a href="blank.html">Карта штата</a></li>
+              <li>Гостиницы</li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main class="catalog-page container">
@@ -32,35 +34,35 @@
        <h1 class="visually-hidden">Фильтры по поиску жилья</h1>
        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="infrastructure">
-          <legend>Инфраструктура</legend>
+          <legend>Инфраструктура:</legend>
             <ul>
-              <li>
-                <input type="checkbox" name="pool" id="filter-pool" checked>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
                 <label for="filter-pool">Бассейн</label>
               </li>
-              <li>
-                <input type="checkbox" name="parking" id="filter-parking">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
                 <label for="filter-parking">Парковка</label>
               </li>
-              <li>
-                <input type="checkbox" name="wifi" id="filter-wifi">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="wifi" id="filter-wifi">
                 <label for="filter-wifi">WI-FI</label>
               </li>
             </ul>
         </fieldset>
-        <fieldset class="type-of-house">
-          <legend>Тип жилья</legend>
+        <fieldset  class="type-of-house">
+          <legend>Тип жилья:</legend>
             <ul>
-              <li>
-                <input type="checkbox" name="hotels" id="filter-hotels" checked>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotels" id="filter-hotels" checked>
                 <label for="filter-hotels">Гостиницы</label>
               </li>
-              <li>
-                <input type="checkbox" name="motels" id="filter-motels" checked>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="motels" id="filter-motels" checked>
                 <label for="filter-motels">Мотели</label>
               </li>
-              <li>
-                <input type="checkbox" name="apartaments" id="filter-apartaments" checked>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="apartaments" id="filter-apartaments" checked>
                 <label for="filter-apartaments">Апартаменты</label>
               </li>
             </ul>
