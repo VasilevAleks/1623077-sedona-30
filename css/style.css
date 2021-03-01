@@ -423,7 +423,7 @@ img {
 
 .catalog-page {
   display: grid;
-  grid-template-rows:min-content min-content 1fr;
+  grid-template-rows:min-content min-content min-content;
 }
 
 .catalog-page .search-home {
@@ -512,29 +512,37 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  margin-left: 74px;
+  margin-right: 29px;
+  margin-top: 30px;
 }
 
 .results-of-filter {
   display: flex;
-  gap: 10px;
   align-self: center;
   padding: 0;
   margin: 0;
+  height: 86px;
   list-style: none;
 }
+
 .sorting {
   display: flex;
-  margin-right: 32px;
-  justify-content: space-around;
+  margin-right: 35px;
+  justify-content: space-between;
   align-items: center;
-  width:393px;
+  width:360px;
   margin-left:10px;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
+  position:relative;
+  bottom: 2px;
+  right: 0px;
 }
 .sorting h3 {
   font-size: 12px;
+  margin-right: 14px;
 }
 /* Фильтр стоимостей*/
 
@@ -632,7 +640,6 @@ img {
 
 .catalog-page .results-of-hotels {
   grid-row: 3/4;
-
 }
 .results-of-hotels li{
   padding: 0;
@@ -646,24 +653,27 @@ img {
   justify-content: space-around;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  margin: 0;
-  padding: 0;
-  list-style: none;
   height: 150px;
+  position: relative;
+  bottom: 13px;
+
 }
 .foto-hotel {
   margin: auto;
   order:-1;
   width:135px;
   height: 90px;
+  position: relative;
+
 }
 .type-of-hotels {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-content: flex-start;
-  width:792px;
+  width: 800px;
   height: 150px;
+  margin-right: -12px;
 }
 
 .type-of-hotels h3,
@@ -682,21 +692,49 @@ img {
   justify-content: space-between;
   align-content: flex-end;
   margin-top: 30px;
-  margin-right: 73px;
+  margin-right: 65px;
   margin-bottom: 30px;
+  width: 110px;
+}
+
+.hotel-status p:first-child{
+  background: url(../img/star.svg) space;
+  height:18px;
+  margin-bottom: -1px;
+}
+.stars4 {
+  margin-left: 22px;
+}
+
+.stars3 {
+  margin-left: 44px;
+}
+
+.stars2 {
+  margin-left: 68px;
 }
 
 .features-of-hotels {
-  display: flex;
-  margin-right: 37px;
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 6px;
+  width:300px;
+  text-align: start;
 }
-.features-of-hotels p {
-  margin-right: 37px;
+.features-of-hotels p:first-child {
+  grid-column: 1/2;
+}
+
+.features-of-hotels p:last-child {
+  grid-column: 2/3;
+  text-align: start;
 }
 
 .buttons-for-hotels {
   display: flex;
   margin-bottom: 30px;
+  width: 258px;
+  justify-content: space-between;
 }
 
 .result-items {
@@ -728,6 +766,8 @@ img {
 .rating {
   color: var(--rating);
   background-color: var(--bg-rating);
+  height: 27px;
+  text-align: center;
 }
 
 .button-show {
@@ -753,15 +793,15 @@ img {
 
 .result-items .button-more,
 .result-items .button-reservation {
-  margin-left: 6px;
+  height: 27px;
+  border: none;
   font-weight: 700;
+  text-transform: uppercase;
   color: var(--rev-text);
 }
 .button-more {
   background-color: var(--svg-blocks);
   width: 110px;
-  height: 27px;
-  border: none;
 }
 
 .button-more:hover {
@@ -775,9 +815,7 @@ img {
 
 .button-reservation {
   background-color: var(--search-hotels);
-  width: 110px;
-  height: 27px;
-  border: none;
+  width: 142px;
 }
 
 .button-reservation:hover {
@@ -788,19 +826,57 @@ img {
   background-color: var(--focus-button-reserv);
   opacity: 0.3;
 }
+
+
 /* Footer*/
 
 .main-footer {
+  height: 120px;
   font-size: 21px;
   line-height: 26px;
   color: var(--title-text);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: -160px;
+
 }
 .footer-contacts {
   font-weight: 700;
+  margin-left: 110px;
+  text-align: center;
+}
+
+
+.footer-network ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 150px;
+  height: 46px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-network li{
+  display: flex;
+  flex-direction: row;
+  margin-left:6px;
+  margin-top: 36px;
+}
+.footer-network li:first-child{
+  margin-left: 140px;
 }
 
 .button-network {
   background-color: var(--svg-blocks);
+  height: 42px;
+  width: 46px;
+  text-align: center;
+}
+.button-network img {
+  position:relative;
+  top:10px;
 }
 
 .footer-copyright {
@@ -810,6 +886,6 @@ img {
 .main-footer .container {
   display: grid;
   grid-template-columns: 400px 400px 400px;
-
+  height: 120px;
 }
 
