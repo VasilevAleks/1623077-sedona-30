@@ -57,8 +57,12 @@
   text-transform: uppercase;
   min-height: 100%;
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
+  /*grid-template-rows: min-content 1fr min-content;*/
   align-content: center;
+}
+.catalog {
+display: grid;
+ grid-template-rows: min-content min-content min-content;
 }
 
 .main-header {
@@ -87,6 +91,8 @@ img {
 }
 
 .main-footer,
+.result-list,
+.catalog-footer,
 .features-list,
 .site-navigation,
 .infrastructure ul,
@@ -420,7 +426,6 @@ img {
   display: flex;
   flex-direction: column;
   align-content: center;
-  outline: 5px solid saddlebrown;
 }
 .button-search {
   background-color: var(--button-reserv);
@@ -439,7 +444,6 @@ img {
   line-height: 26px;
   font-weight: 700;
   color: var(--title-text);
-  outline: 5px solid firebrick;
   margin-bottom: 30px;
   margin-left:55px;
   margin-right:55px;
@@ -475,7 +479,8 @@ img {
 
 .catalog-page {
   display: grid;
-  grid-template-rows:min-content min-content min-content;
+  grid-template-rows:min-content 86px min-content;
+  margin-bottom: 0px;
 }
 
 .catalog-page .search-home {
@@ -736,8 +741,8 @@ img {
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   height: 150px;
-  position: relative;
-  bottom: 13px;
+  /*position: relative;
+  bottom: 13px;*/
 }
 .foto-hotel {
   margin: auto;
@@ -745,6 +750,7 @@ img {
   width:135px;
   height: 90px;
   position: relative;
+  right: -22px;
 
 }
 .type-of-hotels {
@@ -861,6 +867,7 @@ img {
   position: relative;
   top: 20px;
   right: 8px;
+
 }
 
 .button-show {
@@ -907,7 +914,7 @@ img {
 }
 
 .button-reservation {
-  background-color: var(--search-hotels);
+  background-color: var(--button-reserv);
   width: 142px;
 }
 
@@ -931,7 +938,6 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-top:-155px;
   margin-left: -25px;
 }
 
@@ -1001,4 +1007,3 @@ img {
   grid-template-columns: 400px 400px 400px;
   height: 120px;
 }
-
