@@ -15,10 +15,10 @@
     <header class="main-header">
       <div class="container">
         <div class= "navigation">
-          <figure class= "logo">
+          <figure class= "main logo">
             <img src="img/logo-1.png" width="138px" height="70px" alt="Логотип Сидоны" >
           </figure>
-          <nav>
+          <nav class="main">
             <ul class="site-navigation">
               <li><a href="blank.html">Информация</a></li>
               <li><a href="blank.html">Фото и Видео</a></li>
@@ -105,39 +105,46 @@
             </li>
         </ul>
       </section>
-      <section class="reservation">
-        <h2>
-          Заинтересовались?
-        </h2>
-        <p>
-          Укажите предпологаемые даты поездки <br>
-          И мы покажем вам лучшие предложения гостиниц в Седоне
-        </p>
-      </section>
-      <section class="reservation-form">
-        <span>
-          Поиск гостиницы в Седоне
-        </span>
-        <form action="https://echo.htmlacademy.ru" method="post">
+      <div class="reservation">
+        <section class="reservation-hotels">
+          <h2>
+            Заинтересовались?
+          </h2>
           <p>
-            <label for="reservation-entry">Дата заезда</label>
-            <input id="reservation-entry" type="text" name="date" placeholder="24 апреля 2017">
+            Укажите предпологаемые даты поездки <br>
+            И мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <p>
-            <label for="reservation-departure">Дата выезда</label>
-            <input id="reservation-departure" type="text" name="date" placeholder="4 июля 2017">
-          </p>
-          <p>
-            <label for="reservation-adult">Взрослые</label>
-            <input id="reservation-adult" type="number" name="number" placeholder="2">
-          </p>
-          <p>
-            <label for="reservation-child">Дети</label>
-            <input id="reservation-child" type="number" name="number" placeholder="0">
-          </p>
-          <button class="button-find" type="submit">Найти</button>
-        </form>
-      </section>
+        </section>
+        <section class="reservation-form">
+          <button class="button-search" type="button">
+            Поиск гостиницы в Седоне
+          </button>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="reservation-entry">Дата заезда</label>
+              <input id="reservation-entry" type="text" name="date" placeholder="24 апреля 2017">
+            </p>
+            <p>
+              <label for="reservation-departure">Дата выезда</label>
+              <input id="reservation-departure" type="text" name="date" placeholder="4 июля 2017">
+            </p>
+            <span class="who-resrvation">
+              <p>
+                <label for="reservation-adult">Взрослые</label>
+                <input id="reservation-adult" type="number" name="number" placeholder="2">
+              </p>
+              <p>
+                <label for="reservation-child">Дети</label>
+                <input id="reservation-child" type="number" name="number" placeholder="0">
+              </p>
+            </span>
+            <button class="button-find" type="submit">Найти</button>
+          </form>
+        </section>
+        <section class="modal-map">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d215392.72213510718!2d-111.72658566910617!3d34.964083724540686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da15809a0dee3%3A0x22ca556fbe412052!2sSedona%20%2F%20Red%20Rock%20Country!5e0!3m2!1sru!2sru!4v1614805443406!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>        </section>
+      </div>
     </main>
     <footer class= "main-footer">
       <div class= "container">

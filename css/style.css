@@ -23,7 +23,6 @@
   --text: #333333;
   --rev-text: #ffffff;
   --main-color: #ffffff;
-  --search-hotels:#766357;
   --svg-blocks: #81B3D2;
   --feature-n3-n5: #EEEEEE;
   --rating: #666666;
@@ -36,6 +35,9 @@
   --border: #E5E5E5;
   --range:rgba(100%, 100%, 100%, 0.3);
   --toggle: #ABABAB;
+  --omgonemorecolor: #CACACA;
+  --htmllogoactive: #BDBBBC;
+  --htmllogolink: #231F20;
 }
 
 /* Global */
@@ -90,7 +92,8 @@ img {
 .infrastructure ul,
 .type-of-house ul,
 .button-reservation,
-.button-more {
+.button-more,
+.button-search {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -117,26 +120,36 @@ img {
 
 /* Menu Navigation*/
 
+.navigation {
+  height: 56px;
+}
+
 .site-navigation {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   background-color: var(--main-color);
-  height: 56px;
   display:grid;
   grid-template-columns: 200px 200px  1fr 200px 200px;
   position: relative;
-  top: -100px;
+  top: -80px;
   z-index: 1;
+}
+.main .site-navigation{
+  margin-top:-16px;
 }
 
 .logo {
   position: relative;
   z-index: 2;
-  top: -14px;
-  left: 490px;
+  left: 532px;
   width: 138px;
   height: 70px;
+}
+.navigation figure{
+  top:-14px;
+  left:490px;
+
 }
 
 .site-navigation li:first-child {
@@ -165,6 +178,7 @@ img {
   padding-right: 72px;
 }
 
+
 .site-navigation a:any-link {
   color: var(--title-text);
 }
@@ -187,7 +201,6 @@ img {
   width:457px;
   height: 351px;
   left:372px;
-  top: -20px;
 }
 
 
@@ -386,10 +399,14 @@ img {
 }
 
 
+
 /*reservation*/
 
 .reservation {
   line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-color);
 }
 
 .reservation h2 {
@@ -397,27 +414,62 @@ img {
   font-weight: 700;
 }
 
-.reservation-form span{
-  background-color: var(--search-hotels);
+.reservation-form {
+  width: 568px;
+  height: 481px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  outline: 5px solid saddlebrown;
+}
+.button-search {
+  background-color: var(--button-reserv);
+  width: 568px;
+  height: 86px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color: var(--rev-text)
+  color: var(--rev-text);
+  border: none;
+
+
 }
 
 .reservation-form p {
   line-height: 26px;
   font-weight: 700;
-  color: var(--title-text)
+  color: var(--title-text);
+  outline: 5px solid firebrick;
+  margin-bottom: 30px;
+  margin-left:55px;
+  margin-right:55px;
 }
 
+.reservation-form p:first-child{
+  margin-top: 55px;
+}
+.who-reservation{
+  display: flex;
+  flex-direction: row;
+}
 .button-find {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   background-color: var(--svg-blocks);
+  border: none;
+  width: 458px;
+  height: 58px;
+  margin-bottom: 54px;
+  margin-left:55px;
+  margin-right:55px;
 }
-
+.modal-map {
+  height: 594px;
+  width: 1200px;
+  margin: auto;
+  background-color: var(--main-color);
+}
 /*catalog*/
 
 
@@ -544,6 +596,36 @@ img {
   font-size: 12px;
   margin-right: 14px;
 }
+
+.max-min-sorting{
+  margin-left: 470px;
+  margin-top:35px;
+}
+.min{
+  margin-left:9px;
+}
+
+.min:any-link path,
+.max:any-link path {
+  fill: var(--omgonemorecolor);
+}
+
+.min:hover path,
+.max:hover path {
+  fill: var(--title-text);
+}
+
+.min:focus path,
+.max:focus path {
+  fill: var(--svg-blocks);
+}
+
+.min:active path,
+.max:active path {
+  fill: var(--svg-blocks);
+}
+
+
 /* Фильтр стоимостей*/
 
 .range-price {
@@ -656,7 +738,6 @@ img {
   height: 150px;
   position: relative;
   bottom: 13px;
-
 }
 .foto-hotel {
   margin: auto;
@@ -693,7 +774,7 @@ img {
   align-content: flex-end;
   margin-top: 30px;
   margin-right: 65px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   width: 110px;
 }
 
@@ -704,14 +785,23 @@ img {
 }
 .stars4 {
   margin-left: 22px;
+  position: relative;
+  top:-15px;
+  right: 6px;
 }
 
 .stars3 {
   margin-left: 44px;
+  position: relative;
+  top:-15px;
+  right: 6px;
 }
 
 .stars2 {
   margin-left: 68px;
+  position: relative;
+  top:-15px;
+  right: 6px;
 }
 
 .features-of-hotels {
@@ -768,6 +858,9 @@ img {
   background-color: var(--bg-rating);
   height: 27px;
   text-align: center;
+  position: relative;
+  top: 20px;
+  right: 8px;
 }
 
 .button-show {
@@ -838,9 +931,10 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-top: -160px;
-
+  margin-top:-155px;
+  margin-left: -25px;
 }
+
 .footer-contacts {
   font-weight: 700;
   margin-left: 110px;
@@ -881,8 +975,27 @@ img {
 
 .footer-copyright {
   font-size: 14px;
+  position: relative;
+  padding-left: 80px;
+  padding-top: 10px;
+}
+.footer-copyright a {
+  position: relative;
+  top:10px;
 }
 
+.button-copyright:any-link path {
+  fill: var(--htmllogolink);
+}
+
+
+.button-copyright:focus path {
+  fill: var(--svg-blocks);
+}
+
+.button-copyrightx:active path {
+  fill: var(--htmllogoactive);
+}
 .main-footer .container {
   display: grid;
   grid-template-columns: 400px 400px 400px;
