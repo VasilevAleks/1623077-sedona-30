@@ -20,8 +20,10 @@
 
 :root {
   --title-text: #000000;
+  --title-text-30:rgba(0, 0, 0, 0.3);
   --text: #333333;
   --rev-text: #ffffff;
+  --rev-text-30:rgba(255, 255, 255, 0.3);
   --main-color: #ffffff;
   --svg-blocks: #81B3D2;
   --feature-n3-n5: #EEEEEE;
@@ -202,7 +204,7 @@ img {
 }
 
 .site-navigation a:active {
-  color: var(--search-hotels);
+  color: var(--button-reserv);
 }
 
 .welcome-logo {
@@ -357,10 +359,7 @@ img {
 }
 .features-item .container {
   display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+  }
 
 .features-item:nth-child(3) .container{
  flex-direction: row-reverse;
@@ -385,6 +384,7 @@ img {
 .other-features p {
  position: relative;
  top: -15px;
+ color: var(--text);
 }
 
 .other-features span {
@@ -416,11 +416,11 @@ img {
 .reservation {
   /*height:764px;*/
   line-height: 24px;
+  height: 766px;
   display: flex;
   flex-direction: column;
   background-color: var(--main-color);
   align-items: center;
-  justify-content: baseline;
 }
 .reservation-hotels {
   text-align: center;
@@ -447,6 +447,8 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+  position: relative;
+  bottom:10px;
 }
 .reservation-form form{
   height: 395px;
@@ -496,7 +498,7 @@ img {
   text-align: center;
 }
 .welcome-date {
-  margin-top: 45px;
+  margin-top: 55px;
   margin-bottom:29px;
 }
 .welcome-date label,
@@ -524,7 +526,7 @@ img {
   background-color: var(--link-resev-input);
 }
 
-.who-resrvation {
+.who-reservation {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -538,13 +540,14 @@ img {
   padding-top:5px;
 }
 
-.who-resrvation .humans:first-child {
-  margin-right: 14px;
+
+.who-reservation .humans:last-child {
+  margin-left: 15px;
 }
 .humans input {
   width: 74px;
   height: 38px;
- text-align: center;
+  text-align: center;
   border: none;
   background-color: var(--link-resev-input);
 }
@@ -557,7 +560,6 @@ img {
 
 .pluse {
   border:none;
-  outline: none;
   background-color: var(--link-resev-input);
   position: relative;
   right: 0px;
@@ -567,8 +569,6 @@ img {
 .minus {
   margin-left: 22px;
   border:none;
-  outline: none;
-  background-color: none;
   position:relative;
   width:20px;
   height: 40px;
@@ -594,15 +594,29 @@ img {
 /*для сохранения*/
 
 .modal-map {
-  height: 510px;
+  height: 470px;
   width: 1200px;
   background-color: var(--main-color);
   background: url(../img/map.png) no-repeat;
   position:relative;
   z-index: 1;
-  bottom:430px;
+  bottom:395px;
   right:315px;
 }
+
+.minus:hover path,
+.pluse:hover path,
+.button-calendar:hover path {
+  fill: var(--title-text);
+}
+.minus:active path,
+.pluse:active path,
+.button-calendar:active path {
+  fill: var(--svg-blocks);
+}
+
+
+
 /*catalog*/
 
 .catalog-page {
@@ -829,26 +843,30 @@ img {
   left: 248px;
 }
 
+.toggle:hover {
+  border: 10px solid var(--main-color);
+}
+
 /*Filter of hotels*/
 
 
 .sorting a:any-link {
-  color: var(--title-text);
+  color: var(--title-text-30);
   border-bottom: 1px dashed var(--svg-blocks);
-  opacity: 0.3;
+}
+
+.sorting a:focus {
+  color: var(--title-text);
+  border-bottom: none;
 }
 
 .sorting a:hover {
   color: var(--svg-blocks);
   border-bottom: 1px dashed var(--svg-blocks);
 }
-
-.sorting a:focus {
-  color: var(--title-text);
-}
-
 .sorting a:active {
   color: var(--svg-blocks);
+  border-bottom: none;
 }
 
 /* Results of hotels*/
@@ -1032,13 +1050,17 @@ img {
   width: 110px;
 }
 
-.button-more:hover {
+.button-more:hover,
+.button-find:hover,
+.button-network:hover {
   background-color: var(--hover-button-more);
 }
 
-.button-more:focus {
+.button-more:focus,
+.button-find:focus,
+.button-network:focus {
   background-color: var(--focus-button-more);
-  opacity: 0.3;
+  color: var(--rev-text-30);
 }
 
 .button-reservation {
@@ -1046,13 +1068,15 @@ img {
   width: 142px;
 }
 
-.button-reservation:hover {
+.button-reservation:hover,
+.button-search:hover {
   background-color: var(--hover-button-reserv);
 }
 
-.button-reservation:focus {
+.button-reservation:focus,
+.button-search:focus {
   background-color: var(--focus-button-reserv);
-  opacity: 0.3;
+  color: var(--rev-text-30);
 }
 
 
@@ -1063,9 +1087,6 @@ img {
   font-size: 21px;
   line-height: 26px;
   color: var(--title-text);
-  margin: 0;
-  padding: 0;
-  list-style: none;
   margin-left: -25px;
 }
 
@@ -1075,11 +1096,7 @@ img {
   text-align: center;
 }
 
-
 .footer-network ul{
-  margin: 0;
-  padding: 0;
-  list-style: none;
   width: 150px;
   height: 46px;
   display: flex;
@@ -1127,7 +1144,7 @@ img {
   fill: var(--svg-blocks);
 }
 
-.button-copyrightx:active path {
+.button-copyright:active path {
   fill: var(--htmllogoactive);
 }
 .main-footer .container {
