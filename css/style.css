@@ -591,6 +591,7 @@ img {
   text-transform: uppercase;
   margin-bottom:53px;
 }
+
 /*для сохранения*/
 
 .modal-map {
@@ -603,7 +604,9 @@ img {
   bottom:395px;
   right:315px;
 }
-
+.close-form {
+  z-index: 4;
+}
 .minus:hover path,
 .pluse:hover path,
 .button-calendar:hover path {

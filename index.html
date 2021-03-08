@@ -119,7 +119,7 @@
           <button class="button-search" type="button">
               Поиск гостиницы в Седоне
           </button>
-          <form action="https://echo.htmlacademy.ru" method="post">
+          <form class="form-for-reservation" action="https://echo.htmlacademy.ru" method="post">
               <p class="welcome-date">
                 <label for="reservation-entry">Дата заезда:</label>
                 <input id="reservation-entry" type="text" name="date" placeholder="24 апреля 2017">
@@ -219,5 +219,18 @@
         </section>
       </div>
     </footer>
+  <script>
+    const reservshow=document.querySelector(".page-body");
+    const closeform=document.querySelector(".modal-map");
+    const showform=document.querySelector(".button-search");
+    //reservshow.addEventListener("onload", function (evt) {
+      document.addEventListener('DOMContentLoaded', function() {
+        closeform.classList.add("close-form");
+}, false);
+    showform.addEventListener("click", function (evt) {
+     closeform.classList.remove("close-form");
+    });
+
+  </script>
   </body>
 </html>
