@@ -72,7 +72,7 @@ display: grid;
 
 .main-header {
   background-color: var(--main-color);
-  background: url("../img/Shape.svg") 50% 508px no-repeat, url("../img/background-photo.png") 50% 55px no-repeat;
+  background: url("../img/shape.svg") 50% 508px no-repeat, url("../img/background-photo.png") 50% 55px no-repeat;
   height: 582px;
 }
 .search-home {
@@ -87,7 +87,7 @@ display: grid;
 }
 
 a {
-  text-decoration: none;
+  text-decoration:none;
 }
 
 img {
@@ -558,6 +558,14 @@ img {
   outline: none;
 }
 
+.form-for-reservation input:hover {
+  background-color: var( --hover-resev-input);
+}
+.form-for-reservation input:focus {
+  background-color: var(--main-color);
+  border: 2px solid var(--border);
+}
+
 .pluse {
   border:none;
   background-color: var(--link-resev-input);
@@ -792,7 +800,7 @@ img {
   border: 2px solid var(--main-color);
   border-radius: 2px;
   display: flex;
-  background-image: url(../img/Rectangle.svg);
+  background-image: url(../img/rectangle.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1097,6 +1105,11 @@ img {
   font-weight: 700;
   margin-left: 110px;
   text-align: center;
+}
+
+.footer-contacts a {
+  color: var(--title-text);
+  text-decoration: none;
 }
 
 .footer-network ul{
