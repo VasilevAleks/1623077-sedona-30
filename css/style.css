@@ -42,6 +42,7 @@
   --htmllogolink: #231F20;
   --link-resev-input:#F2F2F2;
   --hover-resev-input: #EBEBEB;
+  --shadow:rgba(0, 1, 1, 0.15);
 }
 
 /* Global */
@@ -61,9 +62,8 @@
   text-transform: uppercase;
   min-height: 100%;
   display: grid;
-  /*grid-template-rows: min-content 1fr min-content;*/
   align-content: center;
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0px 7px 15px var(--shadow);
 }
 .catalog {
 display: grid;
@@ -414,7 +414,6 @@ img {
 /*reservation*/
 
 .reservation {
-  /*height:764px;*/
   line-height: 24px;
   height: 766px;
   display: flex;
@@ -459,7 +458,6 @@ img {
   z-index: 2;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
   background-color: var(--main-color);
-  /*display: none;*/
 }
 .button-search {
   background-color: var(--button-reserv);
@@ -566,7 +564,7 @@ img {
   border: 2px solid var(--border);
 }
 
-.pluse {
+.plus {
   border:none;
   background-color: var(--link-resev-input);
   position: relative;
@@ -600,8 +598,6 @@ img {
   margin-bottom:53px;
 }
 
-/*для сохранения*/
-
 .modal-map {
   height: 470px;
   width: 1200px;
@@ -614,6 +610,13 @@ img {
 }
 .close-form {
   z-index: 4;
+  animation: opacity 1s;
+}
+
+@keyframes opacity {
+  from { opacity:0.7; }
+  66%  { opacity:0.9;  }
+  to   { opacity:1; }
 }
 .minus:hover path,
 .pluse:hover path,
@@ -898,9 +901,8 @@ img {
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   height: 150px;
-  /*position: relative;
-  bottom: 13px;*/
 }
+
 .foto-hotel {
   margin: auto;
   order:-1;
@@ -908,8 +910,8 @@ img {
   height: 90px;
   position: relative;
   right: -22px;
-
 }
+
 .type-of-hotels {
   display: flex;
   flex-direction: column;
@@ -1105,11 +1107,17 @@ img {
   font-weight: 700;
   margin-left: 110px;
   text-align: center;
+  list-style: none;
 }
 
+.footer-contacts p:last-child {
+  position: relative;
+  bottom: 15px;
+}
 .footer-contacts a {
   color: var(--title-text);
   text-decoration: none;
+
 }
 
 .footer-network ul{
@@ -1117,6 +1125,9 @@ img {
   height: 46px;
   display: flex;
   flex-direction: row;
+  position: relative;
+  bottom: 24px;
+  left: -40px;
 }
 
 .footer-network li{
@@ -1131,7 +1142,7 @@ img {
 
 .button-network {
   background-color: var(--svg-blocks);
-  height: 42px;
+  height: 46px;
   width: 46px;
   text-align: center;
 }

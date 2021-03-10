@@ -1,0 +1,1 @@
+const reservshow=document.querySelector(".page-body");const closeform=document.querySelector(".modal-map");const showform=document.querySelector(".button-search");document.addEventListener('DOMContentLoaded',function(){closeform.classList.add("close-form")},!1);showform.addEventListener("click",function(evt){closeform.classList.toggle("close-form")})
